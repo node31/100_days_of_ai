@@ -1,0 +1,45 @@
+<h1 id="day-6-your-first-ai-model-detailed-blog">Day 6: Your First AI
+Model (Detailed Blog)</h1>
+<h2 id="introduction">Introduction</h2>
+<p>On Day 5, you set up your Python and Jupyter environment. Today,
+you’ll build your first AI model: a simple sentiment analysis classifier
+using Python and scikit-learn.</p>
+<h2 id="what-is-sentiment-analysis">What is Sentiment Analysis?</h2>
+<p>Sentiment analysis is the process of determining whether a piece of
+text is positive, negative, or neutral. It’s widely used in business,
+social media, and customer feedback analysis.</p>
+<h2 id="step-by-step-guide">Step-by-Step Guide</h2>
+<ol type="1">
+<li><p><strong>Install scikit-learn</strong></p>
+<p>Open your terminal and run:</p>
+<p>pip install scikit-learn</p></li>
+<li><p><strong>Sample Data</strong></p>
+<p>Create a small dataset:</p>
+
+<p>texts = [ "I love this product!", "This is the worst experience
+ever.", "Absolutely fantastic service.", "I am not happy with the
+quality." ] labels = [1, 0, 1, 0] # 1 = positive, 0 = negative</p></li>
+<li><p><strong>Convert Text to Features</strong></p>
+<p>python from sklearn.feature_extraction.text import CountVectorizer
+vectorizer = CountVectorizer() X =
+vectorizer.fit_transform(texts)</p></li>
+<li><p><strong>Train a Model</strong></p>
+<p>python from sklearn.linear_model import LogisticRegression model =
+LogisticRegression() model.fit(X, labels)</p></li>
+<li><p><strong>Test the Model</strong></p>
+<p>python test_texts = ["I enjoyed this!", "Terrible service."] X_test =
+vectorizer.transform(test_texts) predictions = model.predict(X_test)
+print(predictions) # [1 0]</p></li>
+</ol>
+<h2 id="todays-todo">Today’s TODO</h2>
+<ol type="1">
+<li>Install scikit-learn: Run <code>pip install scikit-learn</code> in
+your terminal.</li>
+<li>Create a new Jupyter Notebook and build a simple sentiment analysis
+model (use the sample code above).</li>
+<li>Test your model with your own example sentences.</li>
+</ol>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>Tomorrow, we’ll explore neural networks and how they work!</p>
+<hr />
+<p><em>Keep learning, keep building!</em></p>
