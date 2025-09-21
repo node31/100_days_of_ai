@@ -1,0 +1,10 @@
+Exact Match Accuracy: 0.33
+Output: AI is transforming healthcare.
+Reference: AI is transforming healthcare.
+
+Output: AI helps doctors diagnose faster.
+Reference: AI enables faster diagnosis for doctors.
+
+Output: AI in healthcare speeds up diagnosis.
+Reference: AI accelerates healthcare diagnosis.
+
